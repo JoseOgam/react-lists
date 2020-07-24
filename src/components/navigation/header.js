@@ -6,13 +6,13 @@ const Header = () => {
   return (
     <div>
       <nav className="navBar">
-        <span className="navBar-toggle" id="js-toggle">
+        <span className="navBar-toggle">
           <FontAwesomeIcon icon={faChartBar} />
         </span>
         <div>
           <h3>OnlinkneShop</h3>
         </div>
-        <div className="main-nav" id="js-main">
+        <div className="main-nav">
           <a href="#home">Home</a>
           <a href="#home">Cart</a>
           <a href="#home">Login/Register</a>
@@ -22,10 +22,5 @@ const Header = () => {
     </div>
   );
 };
-let mainNav = document.getElementById("js-main");
-let navToggle = document.getElementById("js-toggle");
 
-mainNav.addEventListener("click", () => {
-  navToggle.classList.toggle("active");
-});
 export default Header;
