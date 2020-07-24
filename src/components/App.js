@@ -18,8 +18,6 @@ function App() {
       <FontAwesomeIcon icon={faGoogle} />
       <FontAwesomeIcon icon={faFacebook} />
       <FontAwesomeIcon icon={faTwitter} />
-      <FontAwesomeIcon icon={["fas", "code"]} />
-      <FontAwesomeIcon icon={["fal", "code"]} />;
     </div>
   );
 }

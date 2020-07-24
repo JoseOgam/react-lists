@@ -21,11 +21,36 @@
   background-color: #ddd;
   color: purple;
 }
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
 
-@media screen and (max-width: 600px) {
+@media (max-width: 45rem) {
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
   .navBar.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
+  /* .navBar-toggle {
+    display: inline;
+  } */
+}
+
+.navBar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  padding: 1.6rem;
+  color: purple;
+  font-size: 24px;
+  /* display: none; */
 }
